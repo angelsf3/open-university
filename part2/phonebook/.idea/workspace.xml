@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a47d8165-e834-48d5-936f-f486b968bb91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../../../../programacion/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../programacion/typescript/my-dream-app" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a47d8165-e834-48d5-936f-f486b968bb91" name="Default Changelist" comment="" />
+      <created>1632264202679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632264202679</updated>
+      <workItem from="1632264210004" duration="2947000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632264252161">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1632264252161" />
+    <state x="463" y="69" key="FileChooserDialogImpl" timestamp="1632280988136">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="463" y="69" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1632280988136" />
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1632281075294">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1632281075294" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1632281075293">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1632281075293" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1632281075291">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1632281075291" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1632281075293">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1632281075293" />
+  </component>
+</project>
