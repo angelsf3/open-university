@@ -2,6 +2,7 @@ import './App.css';
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import Countries from "./countries/Countries";
+import CountriesAPI from "./countries/CountriesAPI";
 
 function App() {
     const [countries, setCountries] = useState([])
@@ -10,8 +11,10 @@ function App() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:3001/countries')
-            .then(response => setCountries(response.data))
+            .get('https://api.worldbank.org/v2/country/?format=json')
+            .then(response => {
+                setCountries(response.data[1])
+            })
     }, [])
 
     return(
@@ -19,7 +22,7 @@ function App() {
             <div>
                 find countries <input value={filter} onChange={handleFilterChanges}/>
             </div>
-            <Countries countries={countries} filter={filter}/>
+            <CountriesAPI countries={countries} filter={filter}/>
         </div>
     )
 }
