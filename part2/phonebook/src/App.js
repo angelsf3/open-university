@@ -24,7 +24,7 @@ function App() {
         const person = {
             id: persons.length + 1,
             name: newName,
-            telephone: newTelephone
+            number: newTelephone
         }
 
         if (!persons.find(p => p.name === person.name))
