@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Weather from "../weather/Weather";
 
 function Country({ country, show }) {
     if (show) {
@@ -13,7 +14,11 @@ function Country({ country, show }) {
                         <li key={language.name}>{language.name}</li>
                     )}
                 </ul>
-                {country.image}
+                <div>
+                    <img src={country.image}/>
+                </div>
+
+                <Weather city={country.capital}/>
             </div>
         )
     }
