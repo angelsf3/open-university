@@ -29,7 +29,7 @@ function App() {
 
         if (!persons.find(p => p.name === person.name)) {
             successMessage(`Added ${person.name}`)
-            
+
             personService.create(person).then(personCreated =>
                 setPersons(persons.concat(personCreated)))
         }
@@ -50,8 +50,16 @@ function App() {
     }
 
     const successMessage = (message) => {
+        createMessage(message, 'success')
+    }
+
+    const errorMessage = (message) => {
+        createMessage(message, 'error')
+    }
+
+    const createMessage = (message, type) => {
         setMessage(message)
-        setMessageType('success')
+        setMessageType(type)
         setTimeout(() => {
             setMessage(null)
         }, 2000)
@@ -64,10 +72,15 @@ function App() {
     const handleDeleteButton = (person) => {
         const confirmDelete = window.confirm(`Delete ${person.name}?`)
         if (confirmDelete) {
-            personService.deleteObject(person.id).then(() => {
-                alert(`${person.name} deleted successfully`)
-                setPersons(persons.filter(p=> p.id !== person.id))
-            })
+            personService.deleteObject(person.id)
+                .then(() => {
+                    alert(`${person.name} deleted successfully`)
+                    setPersons(persons.filter(p=> p.id !== person.id))
+                })
+                .catch((reason) => {
+                    errorMessage(`Information of ${person.name} has already been removed from the server`)
+                    setPersons(persons.filter(p=> p.id !== person.id))
+                })
         }
     }
 
