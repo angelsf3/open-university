@@ -19,11 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a47d8165-e834-48d5-936f-f486b968bb91" name="Default Changelist" comment="" />
+    <list default="true" id="a47d8165-e834-48d5-936f-f486b968bb91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/service/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -75,6 +85,7 @@
       <workItem from="1632264210004" duration="3762000" />
       <workItem from="1632336949757" duration="1044000" />
       <workItem from="1632404055947" duration="313000" />
+      <workItem from="1632487639307" duration="1275000" />
     </task>
     <servers />
   </component>
@@ -102,22 +113,22 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="463" y="69" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1632314985589" />
-    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1632404371303">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1632487765045">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1632404371303" />
-    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1632404371302">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1632487765045" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1632487765045">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1632404371302" />
-    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1632404371302">
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1632487765045" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1632487765045">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1632404371302" />
-    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1632404371302">
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1632487765045" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1632487765045">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1632404371302" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1632487765045" />
     <state x="65" y="30" key="new project wizard" timestamp="1632314994363">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
