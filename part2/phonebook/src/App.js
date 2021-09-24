@@ -28,8 +28,20 @@ function App() {
             personService.create(person).then(personCreated =>
                 setPersons(persons.concat(personCreated)))
         }
-        else
-            alert(`${person.name} is already added to phonebook`)
+        else {
+            const confirmEdit = window.confirm(`${person.name} is already added to phonebook, replace the old number with a new one?`)
+            const foundPerson = persons.find(p => p.name === person.name)
+            const personToEdit = { ...foundPerson, number: person.number }
+
+            if (confirmEdit) {
+                personService
+                    .update(personToEdit.id, personToEdit)
+                    .then(newPerson => {
+                        setPersons(persons.map(p => p.id !== foundPerson.id ? p : newPerson))
+                        alert(`Changed the number phone successfully`)
+                    })
+            }
+        }
     }
 
     const handleNameChange = (event) => setNewName(event.target.value)
