@@ -4,12 +4,15 @@ import Person from "./person/Person";
 import Filter from "./filter/Filter";
 import PersonForm from "./person-form/PersonForm";
 import personService from "./service/Service"
+import NotificationMessage from "./notification-message/NotificationMessage";
 
 function App() {
     const [persons, setPersons] = useState([])
     const [newName, setNewName] = useState('')
     const [newTelephone, setNewTelephone] = useState('')
     const [filter, setFilter] = useState('')
+    const [message, setMessage] = useState('')
+    const [messageType, setMessageType] = useState('')
 
     useEffect(() => {
         personService
@@ -25,6 +28,8 @@ function App() {
         }
 
         if (!persons.find(p => p.name === person.name)) {
+            successMessage(`Added ${person.name}`)
+            
             personService.create(person).then(personCreated =>
                 setPersons(persons.concat(personCreated)))
         }
@@ -38,10 +43,18 @@ function App() {
                     .update(personToEdit.id, personToEdit)
                     .then(newPerson => {
                         setPersons(persons.map(p => p.id !== foundPerson.id ? p : newPerson))
-                        alert(`Changed the number phone successfully`)
+                        successMessage(`Changed the number phone successfully`)
                     })
             }
         }
+    }
+
+    const successMessage = (message) => {
+        setMessage(message)
+        setMessageType('success')
+        setTimeout(() => {
+            setMessage(null)
+        }, 2000)
     }
 
     const handleNameChange = (event) => setNewName(event.target.value)
@@ -68,6 +81,7 @@ function App() {
     return(
         <div>
             <h2>Phonebook</h2>
+            <NotificationMessage message={message} type={messageType}></NotificationMessage>
             <Filter value={filter} onChange={handlePredicateChange}/>
 
             <h2>add a new</h2>

@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a47d8165-e834-48d5-936f-f486b968bb91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/notification-message/NotificationMessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notification-message/NotificationMessage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -32,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,6 +60,7 @@
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../../../../programacion/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
@@ -85,7 +89,7 @@
       <workItem from="1632264210004" duration="3762000" />
       <workItem from="1632336949757" duration="1044000" />
       <workItem from="1632404055947" duration="313000" />
-      <workItem from="1632487639307" duration="5420000" />
+      <workItem from="1632487639307" duration="8540000" />
     </task>
     <servers />
   </component>
