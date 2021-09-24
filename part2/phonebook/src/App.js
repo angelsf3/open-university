@@ -20,13 +20,14 @@ function App() {
     const addPerson = (event) => {
         event.preventDefault()
         const person = {
-            id: persons.length + 1,
             name: newName,
             number: newTelephone
         }
 
-        if (!persons.find(p => p.name === person.name))
-            setPersons(persons.concat(person))
+        if (!persons.find(p => p.name === person.name)) {
+            personService.create(person).then(personCreated =>
+                setPersons(persons.concat(personCreated)))
+        }
         else
             alert(`${person.name} is already added to phonebook`)
     }
@@ -34,6 +35,16 @@ function App() {
     const handleNameChange = (event) => setNewName(event.target.value)
     const handleTelephoneChange = (event) => setNewTelephone(event.target.value)
     const handlePredicateChange = (event) => setFilter(event.target.value)
+
+    const handleDeleteButton = (person) => {
+        const confirmDelete = window.confirm(`Delete ${person.name}?`)
+        if (confirmDelete) {
+            personService.deleteObject(person.id).then(() => {
+                alert(`${person.name} deleted successfully`)
+                setPersons(persons.filter(p=> p.id !== person.id))
+            })
+        }
+    }
 
     const formProps = {
         addPerson: addPerson,
@@ -54,7 +65,7 @@ function App() {
             <ul>
                 {persons
                     .filter(person => person.name.toLowerCase().includes(filter.toLowerCase()))
-                    .map(person => <Person key={person.id} person={person}/> )}
+                    .map(person => <Person key={person.id} person={person} handleDelete={() => handleDeleteButton(person)}/> )}
             </ul>
         </div>
     )
