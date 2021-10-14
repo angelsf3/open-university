@@ -5,3 +5,4 @@ part2/countries/node_modules
 part2/phonebook/node_modules
 part3/phonebook/node_modules
 /.idea/workspace.xml
+/part3/phonebook/.env
