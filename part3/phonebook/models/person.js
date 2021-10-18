@@ -7,11 +7,19 @@ console.log('connecting to', url)
 
 mongoose.connect(url)
     .then(result => console.log('connected to MongoDB'))
-    .catch(error => console.log('error connecting to MongoDB: ', error,messsage))
+    .catch(error => console.log('error connecting to MongoDB: ', error.message))
 
 const personSchema = new mongoose.Schema({
-    name: { type: String, unique: true },
-    number: String
+    name: {
+        type: String,
+        unique: true,
+        minLength: 3
+    },
+    number: {
+        type: String,
+        minLength: 8,
+        required: true
+    }
 })
 
 personSchema.plugin(uniqueValidator)

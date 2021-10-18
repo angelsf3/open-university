@@ -28,10 +28,14 @@ function App() {
         }
 
         if (!persons.find(p => p.name === person.name)) {
-            successMessage(`Added ${person.name}`)
-
-            personService.create(person).then(personCreated =>
-                setPersons(persons.concat(personCreated)))
+            personService.create(person)
+                .then(personCreated => {
+                    successMessage(`Added ${person.name}`)
+                    setPersons(persons.concat(personCreated))
+                })
+                .catch(error => {
+                    errorMessage(error.response.data.error)
+                })
         }
         else {
             const confirmEdit = window.confirm(`${person.name} is already added to phonebook, replace the old number with a new one?`)
@@ -44,6 +48,9 @@ function App() {
                     .then(newPerson => {
                         setPersons(persons.map(p => p.id !== foundPerson.id ? p : newPerson))
                         successMessage(`Changed the number phone successfully`)
+                    })
+                    .catch(error => {
+                        errorMessage(error.response.data.error)
                     })
             }
         }
@@ -62,7 +69,7 @@ function App() {
         setMessageType(type)
         setTimeout(() => {
             setMessage(null)
-        }, 2000)
+        }, 3000)
     }
 
     const handleNameChange = (event) => setNewName(event.target.value)
