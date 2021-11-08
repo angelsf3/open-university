@@ -1,8 +1,13 @@
-function StatisticLine({ text, value }) {
+import React, {Fragment} from 'react'
+
+function StatisticLine({text, value}) {
     return (
-        <div>
-            <p>{text} {value}</p>
-        </div>
+        <Fragment>
+            <tr>
+                <td>{text}</td>
+                <td>{value}</td>
+            </tr>
+        </Fragment>
     )
 }
 
