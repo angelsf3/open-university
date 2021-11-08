@@ -11,12 +11,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:phonebook-backend" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:exercise-3.6" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dca42672-29c3-41e0-b298-727d96643fae" name="Default Changelist" comment="" />
+    <list default="true" id="dca42672-29c3-41e0-b298-727d96643fae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/phonebook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="exercise-3.3" />
+        <entry key="$PROJECT_DIR$" value="exercise-3.5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,7 +122,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="phonebook-backend" />
+                        <option value="exercise-3.6" />
                       </list>
                     </value>
                   </entry>
@@ -165,6 +168,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
+    <state x="129" y="55" key="MergeDialog" timestamp="1634245452103">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="129" y="55" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1634245452103" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1634231579687">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -173,5 +180,9 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="92" y="92" width="1182" height="552" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.736@0.0.1366.736" timestamp="1634146083138" />
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog" timestamp="1634245466622">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1634245466622" />
   </component>
 </project>
