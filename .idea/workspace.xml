@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:exercise-3.20" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dca42672-29c3-41e0-b298-727d96643fae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/phonebook/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part2/phonebook/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/phonebook/src/service/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/part2/phonebook/src/service/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/phonebook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/phonebook/models/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/models/person.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="phonebook-backend" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1z0tPHJ03tyfyUL2l60EFZyvZ55" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../../programacion/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ansi-c/oop-ansi-c" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="ts.external.directory.path" value="C:\programacion\JetBrains\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dca42672-29c3-41e0-b298-727d96643fae" name="Default Changelist" comment="" />
+      <created>1633296806389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633296806389</updated>
+      <workItem from="1633296808934" duration="59000" />
+      <workItem from="1633297546231" duration="1079000" />
+      <workItem from="1633448161365" duration="1948000" />
+      <workItem from="1633456869409" duration="68000" />
+      <workItem from="1634141675500" duration="10827000" />
+      <workItem from="1634231017211" duration="1450000" />
+      <workItem from="1634233071148" duration="126000" />
+      <workItem from="1634233253495" duration="252000" />
+    </task>
+    <task id="LOCAL-00001" summary="3.1: Phonebook backend step1">
+      <created>1634231533427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634231533428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="exercise-3.20" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3.1: Phonebook backend step1" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.1: Phonebook backend step1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633297651619">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1633297651619" />
+    <state x="365" y="53" key="#start" timestamp="1633448914979">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="365" y="53" key="#start/0.0.1366.736@0.0.1366.736" timestamp="1633448914979" />
+    <state x="92" y="92" width="1182" height="552" key="DiffContextDialog" timestamp="1634574146112">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="92" y="92" width="1182" height="552" key="DiffContextDialog/0.0.1366.736@0.0.1366.736" timestamp="1634574146112" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1634574965925">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1634574965925" />
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1634231009786">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1634231009786">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1634231009786">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1634231009786">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
+    <state x="129" y="55" key="MergeDialog" timestamp="1634252271884">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="129" y="55" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1634252271884" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1634231579687">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.736@0.0.1366.736" timestamp="1634231579687" />
+    <state x="92" y="92" width="1182" height="552" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1634574631389">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="92" y="92" width="1182" height="552" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.736@0.0.1366.736" timestamp="1634574631389" />
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog" timestamp="1634252285094">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1634252285094" />
+  </component>
+</project>
