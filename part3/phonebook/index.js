@@ -1,6 +1,9 @@
 const express = require('express')
+const cors = require('cors')
 const morgan = require('morgan')
 const app = express()
+
+app.use(cors())
 
 app.use(express.json())
 
@@ -9,6 +12,8 @@ app.use(morgan('tiny'))
 app.use(morgan((tokens, request, response) => {
     return `${request.method} ${request.url} ${response.statusCode} ${JSON.stringify(request.body)}`
 }))
+
+app.use(express.static('build'))
 
 let persons = [
     {
