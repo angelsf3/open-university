@@ -1,4 +1,3 @@
 /.idea/
 node_modules/
-
-/part3/phonebook/.env
+.env/
