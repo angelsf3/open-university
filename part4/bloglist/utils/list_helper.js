@@ -29,6 +29,26 @@ const mostBlogs = (blogs) => {
   return authorWithMostBlogs
 }
 
+const mostLikes = (blogs) => {
+  const authors = [...new Set(blogs.map(b => b.author))]
+  const authorsBlogs = []
+
+  authors.forEach(author => {
+    const ab = blogs.filter(b => b.author === author)
+    const totalLikes = ab.map(a => a.likes).reduce((a, b) => a + b, 0)
+
+    authorsBlogs.push({
+      author,
+      likes: totalLikes
+    })
+  })
+
+  const mostLikesValue = Math.max(...(authorsBlogs.map(ab => ab.likes)))
+  const authorWithMostLikes = authorsBlogs
+    .find(authorBlog => authorBlog.likes === mostLikesValue)
+  return authorWithMostLikes
+}
+
 module.exports = {
-  dummy, totalLikes, favoriteBlog, mostBlogs
+  dummy, totalLikes, favoriteBlog, mostBlogs, mostLikes
 }
