@@ -27,6 +27,38 @@ test('http get method test', async () => {
   expect(response.body).toHaveLength(blogs.length)
 })
 
+test('http post method test', async () => {
+  const newBlog = helper.initialBlogs[0]
+  newBlog._id = await helper.nonExistingId()
+
+  await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(201)
+    .expect('Content-Type', /application\/json/)
+
+  const blogsAtEnd = await helper.blogsInDb()
+  expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length + 1)
+})
+
+test('http post method error test', async () => {
+  const newBlog = helper.initialBlogs[0]
+
+  await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(500)
+
+  const blogsAtEnd = await helper.blogsInDb()
+  expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length)
+})
+
+test('the first blog is about React', async () => {
+  const response = await api.get('/api/blogs')
+  const titles = response.body.map(b => b.title)
+  expect(titles).toContain('React patterns')
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })
