@@ -1,5 +1,5 @@
+// eslint-disable-next-line no-unused-vars
 const dummy = (blogs) => {
-  console.log(blogs)
   return 1
 }
 
