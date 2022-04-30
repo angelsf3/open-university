@@ -27,6 +27,11 @@ test('http get method test', async () => {
   expect(response.body).toHaveLength(blogs.length)
 })
 
+test('response has id property', async () => {
+  const response = await api.get('/api/blogs')
+  expect(response.body[0].id).toBeDefined()
+})
+
 test('http post method test', async () => {
   const newBlog = helper.initialBlogs[0]
   newBlog._id = await helper.nonExistingId()
