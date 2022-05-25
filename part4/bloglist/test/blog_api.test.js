@@ -64,6 +64,24 @@ test('the first blog is about React', async () => {
   expect(titles).toContain('React patterns')
 })
 
+test('blog has likes property', async () => {
+  const newBlog = {
+    title: 'Unpopular blog',
+    author: 'Angel',
+    url: 'https://test.com/',
+  }
+
+  await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(201)
+
+  const blogs = await helper.blogsInDb()
+  const savedBlog = blogs.find(blog => blog.title === newBlog.title)
+  expect(savedBlog.likes).toBeDefined()
+  expect(savedBlog.likes).toBe(0)
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })

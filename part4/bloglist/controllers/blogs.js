@@ -8,7 +8,12 @@ router.get('/', async (request, response) => {
 
 router.post('/', async (request, response) => {
   const newBlog = new Blog(request.body)
+  if (newBlog.likes === undefined) {
+    newBlog.likes = 0
+  }
+
   const savedBlog = await newBlog.save()
+
   response
     .status(201)
     .json(savedBlog)
