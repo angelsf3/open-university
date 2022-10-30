@@ -32,4 +32,29 @@ router.delete('/:id', async (request, response) => {
   response.status(400).end()
 })
 
+router.delete('/:id', async (request, response) => {
+  const blog = await Blog.findById(request.params.id)
+  if (blog) {
+    await blog.delete()
+    response.status(204).end()
+  }
+  response.status(400).end()
+})
+
+router.put('/', async (request, response) => {
+  const newBlog = new Blog(request.body)
+  if (newBlog.likes === undefined) {
+    newBlog.likes = 0
+  }
+
+  if (newBlog._id && newBlog.title && newBlog.url) {
+    const updatedBlog = await Blog.findByIdAndUpdate(newBlog._id, newBlog, { new: true })
+
+    response
+      .status(201)
+      .json(updatedBlog)
+  }
+  response.status(400).send()
+})
+
 module.exports = router

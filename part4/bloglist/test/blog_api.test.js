@@ -122,6 +122,21 @@ test('remove blog by id', async () => {
   expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length - 1)
 })
 
+test('update blog', async () => {
+  const blogToUpdate = helper.initialBlogs[0]
+  blogToUpdate.likes = 5
+
+  await api
+    .put(`/api/blogs`)
+    .send(blogToUpdate)
+    .expect(201)
+    .expect('Content-Type', /application\/json/)
+
+  const blogsAtEnd = await helper.blogsInDb()
+  const updatedBlog = blogsAtEnd.find(b => b.id === blogToUpdate._id)
+  expect(updatedBlog.likes).toEqual(blogToUpdate.likes)
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })
