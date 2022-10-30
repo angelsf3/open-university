@@ -5,7 +5,7 @@ const app = require('../app')
 const api = supertest(app)
 const Blog = require('../models/blog')
 
-jest.setTimeout(15000)
+jest.setTimeout(25000)
 
 beforeEach(async () => {
   await Blog.deleteMany({})
@@ -80,6 +80,36 @@ test('blog has likes property', async () => {
   const savedBlog = blogs.find(blog => blog.title === newBlog.title)
   expect(savedBlog.likes).toBeDefined()
   expect(savedBlog.likes).toBe(0)
+})
+
+test('blog has title property', async () => {
+  const newBlog = {
+    author: 'Angel',
+    url: 'https://test.com/',
+  }
+
+  await api
+      .post('/api/blogs')
+      .send(newBlog)
+      .expect(400)
+
+  const blogsAtEnd = await helper.blogsInDb()
+  expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length)
+})
+
+test('blog has url property', async () => {
+  const newBlog = {
+    title: 'Title',
+    author: 'Angel',
+  }
+
+  await api
+      .post('/api/blogs')
+      .send(newBlog)
+      .expect(400)
+
+  const blogsAtEnd = await helper.blogsInDb()
+  expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length)
 })
 
 afterAll(() => {

@@ -12,11 +12,15 @@ router.post('/', async (request, response) => {
     newBlog.likes = 0
   }
 
-  const savedBlog = await newBlog.save()
+  if (newBlog.title && newBlog.url) {
+    const savedBlog = await newBlog.save()
 
-  response
-    .status(201)
-    .json(savedBlog)
+    response
+        .status(201)
+        .json(savedBlog)
+  }
+  response.status(400).send()
+
 })
 
 module.exports = router
