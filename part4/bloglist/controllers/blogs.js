@@ -23,4 +23,13 @@ router.post('/', async (request, response) => {
 
 })
 
+router.delete('/:id', async (request, response) => {
+  const blog = await Blog.findById(request.params.id)
+  if (blog) {
+    await blog.delete()
+    response.status(204).end()
+  }
+  response.status(400).end()
+})
+
 module.exports = router

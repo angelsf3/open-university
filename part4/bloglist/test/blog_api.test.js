@@ -112,6 +112,16 @@ test('blog has url property', async () => {
   expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length)
 })
 
+test('remove blog by id', async () => {
+  const blogToRemove = helper.initialBlogs[0]
+  await api
+    .delete(`/api/blogs/${blogToRemove._id}`)
+    .expect(204)
+
+  const blogsAtEnd = await helper.blogsInDb()
+  expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length - 1)
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })
