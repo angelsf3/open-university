@@ -17,7 +17,7 @@ router.post('/', async (request, response) => {
   if (!request.token || !decodedToken.id) {
     return response
       .status(401)
-      .json({ error: 'Token missing' })
+      .json({ error: 'Token missing or invalid' })
   }
 
   const user = await User.findById(decodedToken.id)
@@ -56,21 +56,25 @@ router.post('/', async (request, response) => {
 })
 
 router.delete('/:id', async (request, response) => {
-  const blog = await Blog.findById(request.params.id)
-  if (blog) {
-    await blog.delete()
-    response.status(204).end()
-  }
-  response.status(400).end()
-})
+  const decodedToken = jwt.verify(request.token, process.env.SECRET)
+  console.log(decodedToken)
 
-router.delete('/:id', async (request, response) => {
+  if (!request.token || !decodedToken.id) {
+    return response
+      .status(401)
+      .json({ error: 'Token missing or invalid' })
+  }
+
+  const userId = decodedToken.id
   const blog = await Blog.findById(request.params.id)
-  if (blog) {
+
+  if (blog.user.toString() === userId.toString()) {
     await blog.delete()
     response.status(204).end()
   }
-  response.status(400).end()
+  response
+    .status(400)
+    .json({ error: 'Invalid user' })
 })
 
 router.put('/', async (request, response) => {
