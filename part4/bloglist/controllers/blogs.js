@@ -1,8 +1,16 @@
 const router = require('express').Router()
 const Blog = require('../models/blog')
+const User = require('../models/user')
+
+const randomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min) + min)
+}
 
 router.get('/', async (request, response) => {
-  const blogs = await Blog.find({})
+  const blogs = await Blog
+    .find({})
+    .populate('user', { username: 1, name: 1 })
+
   response.json(blogs)
 })
 
@@ -12,14 +20,34 @@ router.post('/', async (request, response) => {
     newBlog.likes = 0
   }
 
-  if (newBlog.title && newBlog.url) {
-    const savedBlog = await newBlog.save()
-
-    response
-        .status(201)
-        .json(savedBlog)
+  if (!(newBlog.title && newBlog.url)) {
+    return response
+      .status(400)
+      .json({ error: 'Missing url or title' })
+      .send()
   }
-  response.status(400).send()
+
+  const users = await User.find({}).exec()
+
+  if (!(users.length > 0)) {
+    return response
+      .status(400)
+      .json({ error: 'No users in the DB' })
+      .send()
+  }
+
+  const user = users.at(randomNumber(0, users.length - 1))
+  newBlog.user = user._id
+
+  const savedBlog = await newBlog.save()
+
+  user.blogs = user.blogs.concat(savedBlog._id)
+
+  await user.save()
+
+  response
+    .status(201)
+    .json(savedBlog)
 
 })
 
