@@ -1,9 +1,14 @@
+const jwt = require('jsonwebtoken')
 const router = require('express').Router()
 const Blog = require('../models/blog')
 const User = require('../models/user')
 
-const randomNumber = (min, max) => {
-  return Math.floor(Math.random() * (max - min) + min)
+const getTokenFrom = (request) => {
+  const authorization = request.get('authorization')
+  if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
+    return authorization.substring(7)
+  }
+  return null
 }
 
 router.get('/', async (request, response) => {
@@ -15,7 +20,19 @@ router.get('/', async (request, response) => {
 })
 
 router.post('/', async (request, response) => {
+  const token = getTokenFrom(request)
+  const decodedToken = jwt.verify(token, process.env.SECRET)
+
+  if (!token || !decodedToken.id) {
+    return response
+      .status(401)
+      .json({ error: 'Token missing' })
+  }
+
+  const user = await User.findById(decodedToken.id)
+
   const newBlog = new Blog(request.body)
+
   if (newBlog.likes === undefined) {
     newBlog.likes = 0
   }
@@ -27,16 +44,13 @@ router.post('/', async (request, response) => {
       .send()
   }
 
-  const users = await User.find({}).exec()
-
-  if (!(users.length > 0)) {
+  if (!user) {
     return response
       .status(400)
-      .json({ error: 'No users in the DB' })
+      .json({ error: 'No user not found' })
       .send()
   }
 
-  const user = users.at(randomNumber(0, users.length - 1))
   newBlog.user = user._id
 
   const savedBlog = await newBlog.save()
@@ -48,7 +62,6 @@ router.post('/', async (request, response) => {
   response
     .status(201)
     .json(savedBlog)
-
 })
 
 router.delete('/:id', async (request, response) => {
