@@ -3,14 +3,6 @@ const router = require('express').Router()
 const Blog = require('../models/blog')
 const User = require('../models/user')
 
-const getTokenFrom = (request) => {
-  const authorization = request.get('authorization')
-  if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
-    return authorization.substring(7)
-  }
-  return null
-}
-
 router.get('/', async (request, response) => {
   const blogs = await Blog
     .find({})
@@ -20,10 +12,9 @@ router.get('/', async (request, response) => {
 })
 
 router.post('/', async (request, response) => {
-  const token = getTokenFrom(request)
-  const decodedToken = jwt.verify(token, process.env.SECRET)
+  const decodedToken = jwt.verify(request.token, process.env.SECRET)
 
-  if (!token || !decodedToken.id) {
+  if (!request.token || !decodedToken.id) {
     return response
       .status(401)
       .json({ error: 'Token missing' })
