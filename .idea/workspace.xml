@@ -11,12 +11,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:exercise-3.14" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:exercise-3.15" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca42672-29c3-41e0-b298-727d96643fae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_14_2021_8_03_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_14_2021_8_03_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_14_2021_8_03_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_14_2021_8_03_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part3/phonebook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/index.js" afterDir="false" />
     </list>
@@ -35,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="exercise-3.13" />
+        <entry key="$PROJECT_DIR$" value="exercise-3.11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,7 +124,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="exercise-3.14" />
+                        <option value="exercise-3.15" />
                       </list>
                     </value>
                   </entry>
@@ -148,10 +150,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="365" y="53" key="#start/0.0.1366.736@0.0.1366.736" timestamp="1633448914979" />
-    <state x="92" y="92" width="1182" height="552" key="DiffContextDialog" timestamp="1634256550675">
+    <state x="92" y="92" width="1182" height="552" key="DiffContextDialog" timestamp="1634249206330">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="92" y="92" width="1182" height="552" key="DiffContextDialog/0.0.1366.736@0.0.1366.736" timestamp="1634256550675" />
+    <state x="92" y="92" width="1182" height="552" key="DiffContextDialog/0.0.1366.736@0.0.1366.736" timestamp="1634249206330" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1633297594258">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -172,10 +174,10 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
-    <state x="129" y="55" key="MergeDialog" timestamp="1634256206574">
+    <state x="129" y="55" key="MergeDialog" timestamp="1634252271884">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="129" y="55" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1634256206574" />
+    <state x="129" y="55" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1634252271884" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1634231579687">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -184,9 +186,9 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="92" y="92" width="1182" height="552" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.736@0.0.1366.736" timestamp="1634146083138" />
-    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog" timestamp="1634256222562">
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog" timestamp="1634252285094">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1634256222562" />
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1634252285094" />
   </component>
 </project>
