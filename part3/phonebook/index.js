@@ -89,12 +89,16 @@ app.put('/api/persons/:id', (request, response, next) => {
         .catch(error => next(error))
 })
 
-app.get('/info', (request, response) => {
+app.get('/info', (request, response, next) => {
     const today = new Date()
-    response.send(`
-        <p>Phonebook has info for ${persons.length} people</p>
-        <p>${today}</p>`
-    )
+    Person.find({})
+        .then(persons => {
+            response.send(`
+                <p>Phonebook has info for ${persons.length} people</p>
+                <p>${today}</p>`
+            )
+        })
+        .catch(error => next(error))
 })
 
 const errorHandler = (error, request, response, next) => {
