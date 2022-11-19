@@ -11,17 +11,23 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:exercise-3.20" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:exercise-3.21" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dca42672-29c3-41e0-b298-727d96643fae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/part3/phonebook/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/phonebook/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_18_2021_3_17_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_18_2021_3_17_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_18_2021_3_17_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_18_2021_3_17_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/phonebook/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part2/phonebook/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/phonebook/src/service/Service.js" beforeDir="false" afterPath="$PROJECT_DIR$/part2/phonebook/src/service/Service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part3/phonebook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part3/phonebook/models/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/models/person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/phonebook/mongo.js" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/mongo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/phonebook/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part3/phonebook/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/part3/phonebook/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="phonebook-backend" />
+        <entry key="$PROJECT_DIR$" value="exercise-3.21" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,18 +67,32 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../../programacion/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ansi-c/oop-ansi-c" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/part3/phonebook" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="ts.external.directory.path" value="C:\programacion\JetBrains\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\angelsf\Documents\intelliJ\cursos\react\open university\part3\phonebook" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\angelsf\Documents\intelliJ\cursos\react\open university\part3\phonebook" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js..eslintrc.js">
+    <configuration name=".eslintrc.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/part3/phonebook/.eslintrc.js" working-dir="$PROJECT_DIR$/part3/phonebook">
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <command value="run" />
       <scripts>
@@ -82,6 +102,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js..eslintrc.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,6 +126,7 @@
       <workItem from="1634231017211" duration="1450000" />
       <workItem from="1634233071148" duration="126000" />
       <workItem from="1634233253495" duration="252000" />
+      <workItem from="1634588355637" duration="3071000" />
     </task>
     <task id="LOCAL-00001" summary="3.1: Phonebook backend step1">
       <created>1634231533427</created>
@@ -136,7 +162,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="exercise-3.20" />
+                        <option value="exercise-3.21" />
                       </list>
                     </value>
                   </entry>
@@ -154,6 +180,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="3.1: Phonebook backend step1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="258" key="#ESLint" timestamp="1634591447315">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="552" y="258" key="#ESLint/0.0.1366.736@0.0.1366.736" timestamp="1634591447315" />
     <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633297651619">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -170,26 +200,26 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.736@0.0.1366.736" timestamp="1634574965925" />
-    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1634231009786">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1634591297209">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
-    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1634231009786">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1634591297209" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1634591297209">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
-    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1634231009786">
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1634591297209" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1634591297209">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
-    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1634231009786">
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1634591297209" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1634591297209">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1634231009786" />
-    <state x="129" y="55" key="MergeDialog" timestamp="1634252271884">
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1634591297209" />
+    <state x="129" y="55" key="MergeDialog" timestamp="1634584653290">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="129" y="55" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1634252271884" />
+    <state x="129" y="55" key="MergeDialog/0.0.1366.736@0.0.1366.736" timestamp="1634584653290" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1634231579687">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
@@ -198,9 +228,9 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="92" y="92" width="1182" height="552" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.736@0.0.1366.736" timestamp="1634574631389" />
-    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog" timestamp="1634252285094">
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog" timestamp="1634584665417">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1634252285094" />
+    <state x="409" y="60" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.736@0.0.1366.736" timestamp="1634584665415" />
   </component>
 </project>
