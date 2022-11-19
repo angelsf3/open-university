@@ -11,8 +11,16 @@ mongoose.connect(url)
      error.message))
 
 const personSchema = new mongoose.Schema({
-    name: { type: String, unique: true },
-    number: String
+    name: {
+        type: String,
+        unique: true,
+        minLength: 3
+    },
+    number: {
+        type: String,
+        minLength: 8,
+        required: true
+    }
 })
 
 personSchema.plugin(uniqueValidator)
