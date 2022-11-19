@@ -57,7 +57,6 @@ router.post('/', async (request, response) => {
 
 router.delete('/:id', async (request, response) => {
   const decodedToken = jwt.verify(request.token, process.env.SECRET)
-  console.log(decodedToken)
 
   if (!request.token || !decodedToken.id) {
     return response
@@ -78,19 +77,34 @@ router.delete('/:id', async (request, response) => {
 })
 
 router.put('/', async (request, response) => {
-  const newBlog = new Blog(request.body)
-  if (newBlog.likes === undefined) {
-    newBlog.likes = 0
+  const decodedToken = jwt.verify(request.token, process.env.SECRET)
+
+  if (!request.token || !decodedToken.id) {
+    return response
+      .status(401)
+      .json({ error: 'Token missing or invalid' })
   }
 
-  if (newBlog._id && newBlog.title && newBlog.url) {
-    const updatedBlog = await Blog.findByIdAndUpdate(newBlog._id, newBlog, { new: true })
+  const userId = decodedToken.id
 
-    response
-      .status(201)
-      .json(updatedBlog)
+  if (request.body.user.toString() === userId.toString()) {
+    const newBlog = request.body
+    if (newBlog.likes === undefined) {
+      newBlog.likes = 0
+    }
+
+    if (newBlog.id && newBlog.title && newBlog.url) {
+      const updatedBlog = await Blog.findByIdAndUpdate(newBlog.id, newBlog, { new: true })
+
+      response
+        .status(201)
+        .json(updatedBlog)
+    }
+    response.status(400).send()
   }
-  response.status(400).send()
+  response
+    .status(400)
+    .json({ error: 'Invalid user' })
 })
 
 module.exports = router
