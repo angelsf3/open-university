@@ -73,6 +73,22 @@ app.post('/api/persons', (request, response, next) => {
     }
 })
 
+app.put('/api/persons/:id', (request, response, next) => {
+    const id = request.params.id
+    const body = request.body
+
+    const person = {
+        name: body.name,
+        number: body.number
+    }
+
+    Person.findByIdAndUpdate(id, person, { new: true })
+        .then(updatedPerson => {
+            response.json(updatedPerson)
+        })
+        .catch(error => next(error))
+})
+
 app.get('/info', (request, response) => {
     const today = new Date()
     response.send(`
