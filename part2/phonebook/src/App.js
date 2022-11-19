@@ -28,8 +28,7 @@ function App() {
         }
 
         if (!persons.find(p => p.name === person.name)) {
-            personService
-                .create(person)
+            personService.create(person)
                 .then(personCreated => {
                     successMessage(`Added ${person.name}`)
                     setPersons(persons.concat(personCreated))
@@ -70,7 +69,7 @@ function App() {
         setMessageType(type)
         setTimeout(() => {
             setMessage(null)
-        }, 2000)
+        }, 3000)
     }
 
     const handleNameChange = (event) => setNewName(event.target.value)
